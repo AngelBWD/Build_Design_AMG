@@ -34,11 +34,17 @@
         <header class="site-header">
 
             <div class="site-wrapper">
-                <div class="site-branding">
-                    <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-                    <p>{{ site.description }}</p>
+                <div class="mobile_structure">
+                     <div class="site-branding">
+                         <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+                         <p>{{ site.description }}</p>
+                     </div>
+                 
+                     <label for="site-nav-toggle" class="site-nav-toggle-label">
+                         <span class="close"><i class="fa fa-window-close"></i></span>
+                         <span class="menu"><i class="fa fa-bars"></i></span>
+                     </label>
                 </div>
-
                 {% include navigation.html location="header" %}
             </div>
 
