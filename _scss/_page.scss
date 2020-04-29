@@ -12,3 +12,22 @@
         height: 75vh;
     }
 }
+
+.page-contacts {
+    .site-media {
+        text-align: center;
+    }
+
+    .site-media .site-wrapper h2 {
+        margin-top: -2.5em;
+    }
+
+    @include bp(mobile) {
+        .site-media .site-wrapper h2 {
+            margin-top: -3em;
+        }
+    }
+    
+}
+
+
