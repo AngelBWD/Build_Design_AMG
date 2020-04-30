@@ -15,11 +15,38 @@
 
 .page-contacts {
     .site-media {
+        height: 40vh;
+    }
+    .site-media {
         text-align: center;
     }
 
+    @include bp(mobile) {
+
+        .site-wrapper .cont {
+            justify-content: center;
+            font-size: 40px;
+            padding-top: 10px;
+            color: white;
+            padding-right: 0.8em;
+        }
+    
+        .site-media .site-wrapper h2 {
+            margin-top: -9em;
+        }
+    }
+
+    .site-wrapper .cont {
+        justify-content: center;
+        font-size: 40px;
+        padding-top: 10px;
+        color: white;
+        padding-left: 1em;
+    }
+
     .site-media .site-wrapper h2 {
-        margin-top: -2.5em;
+        margin-top: -3em;
+        
     }
 
     @include bp(mobile) {
