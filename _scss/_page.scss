@@ -4,20 +4,44 @@
         opacity: 1;
         font-size: 2.2em;
         text-align: center;
+    } 
+
+    .entry-content .entry-title a:hover {
+        color: #369;
     }
 }
 
 .page-home {
     .site-media {
         height: 75vh;
+        h2 {
+            text-align: left;
+        }
+    }
+
+    @include bp(mobile) {
+        .site-media .site-wrapper {
+            padding-bottom: -6rem;
+        }
+
+        .site-media .site-wrapper p{
+            padding-bottom: -2rem;
+        }
+    }
+    
+
+    .site-media .site-wrapper {
+        padding-bottom: 6rem;
+    }
+
+    .site-media .site-wrapper p{
+        padding-bottom: 2rem;
     }
 }
 
 .page-contacts {
     .site-media {
         height: 40vh;
-    }
-    .site-media {
         text-align: center;
     }
 
@@ -28,7 +52,6 @@
             font-size: 40px;
             padding-top: 10px;
             color: white;
-            padding-right: 0.8em;
         }
     
         .site-media .site-wrapper h2 {
@@ -46,7 +69,10 @@
 
     .site-media .site-wrapper h2 {
         margin-top: -3em;
-        
+    }
+
+    .site-media .site-wrapper {
+        padding-bottom: 3rem;
     }
 
     @include bp(mobile) {
@@ -56,5 +82,4 @@
     }
     
 }
-
 

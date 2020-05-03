@@ -20,7 +20,7 @@
 }
 
 .site-media {
-	min-height: 50vh;
+	min-height: 40vh;
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
@@ -35,11 +35,11 @@
 .site-media:before {
 	display: block;
 	content: '';
-	background: rgba(19,41,48,.8);
+	background: rgba(19, 41, 48, .8);
 	position: absolute;
-	top: 0; 
-	left: 0; 
-	right: 0; 
+	top: 0;
+	left: 0;
+	right: 0;
 	bottom: 0;
 }
 
@@ -52,28 +52,20 @@
 	padding-top: 2rem;
 	padding-bottom: 5rem;
 
-	
 }
+
 @include bp(mobile) {
-    .site-media .site-wrapper p {
-		padding-right: 3rem;
-    }
 	
-	.site-media .site-wrapper h2 {
-		padding-right: 3rem;
-    }
-}
+	.site-media h2 {
+		font-weight: 700;
+	}
 
+	.site-media p {
+		font-weight: 400;
+		opacity: 0.8;
+	}
 
-.site-media h2 {
-	font-weight: 700;
-}
-
-.site-media p {
-	font-weight: 400;
-	opacity: 0.8;
-}
-
-.site-media .social {
-	padding-top: 2em;
+	.site-media .social {
+		padding-top: 2em;
+	}
 }
