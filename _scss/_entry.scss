@@ -52,6 +52,11 @@
 	z-index: 20;
 	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.07);
 	padding: 2em;
+
+	p {
+		font-size: 1.3em;
+	}
+
 	
 	@include bp(desktop) {
 		flex-grow: 1;
@@ -64,6 +69,7 @@
 	font-weight: 500;
 	font-size: 3em;
 }
+
 
 .entry-title a {
 	color: #222;
