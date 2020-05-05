@@ -62,12 +62,21 @@
   
   /* Container for image text */
   .caption-container {
-    text-align: center;
-    background-color: rgb(33, 43, 54);
+    text-align: left;
+    background-color: rgb(230, 227, 227);
     padding: 6px 16px;
-    color: white;
-    margin: 0 0 0.5em 0;
+    color: black;
+    margin: 0.5em 0 1em 0;
     font: 13px/1.5 'Fira Sans', Verdana, sans-serif;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    height: 80px;
+  }
+
+  @include bp(mobile){
+      .caption-container {
+        height: 80px;
+      }
   }
   
   .row:after {
